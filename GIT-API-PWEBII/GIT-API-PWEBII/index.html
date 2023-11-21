@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link href="profile.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title> Card </title>
+
+</head>
+
+<body>
+    <div class="modal" id="repoModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRepoModal()">&times;</span>
+            <div id="repoDetailsModal"></div>
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="hamburger-menu">
+                    <button id="mostrar-usuarios" class="icon-button icon-button-sear">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div id="search">
+                    <input type="text" id="nome-usuario" value="joseolinda">
+                    <button id="mostrar-repositorio" class="show-repo-button icon-button icon-button-repo">
+                        <i class="fas fa-code-branch"></i>
+                    </button>
+                </div>
+
+                
+                
+                
+                <div class="main">
+                    <div class="image" id="aqui">
+                        
+                    </div>
+                    <h3 class="name" id="nome"></h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title" id="login">  </h3>
+                        <p class="text" id="bio"> </p>
+                    </div>
+                    <div class="icons-container">
+                       
+
+                        <a id="github-link" href="#" target="_blank" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        
+                        <a id="blog-link" href="#" target="_blank" class="icon">
+                            <i class="fa-solid fa-blog"></i>
+                        </a>
+
+                    </div>
+                    
+                </div>
+
+                <div class="right">
+                    <div>
+                        <h3 class="number" id="info-repo"> 0 </h3> 
+                        <h3 class="number-title"> Posts </h3>
+                        <div id="repoDetails"></div>
+                    </div>
+                    <div>
+                        <h3 class="number" id="following"> 0</h3>
+                        <h3 class="number-title"> Seguindo </h3>
+                    </div>
+                    <div>
+                        <h3 class="number" id="followers"> 0 </h3>
+                        <h3 class="number-title"> Seguidores </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+</body>
+</html>
